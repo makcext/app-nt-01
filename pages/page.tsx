@@ -4,9 +4,13 @@ import { useRouter } from "next/router"
 	const router = useRouter();
 	const {input} = router.query;
 
+	function getter() {
+		return(input);
+		}
+
 	return (
 		<>			
-			<p>Hello: {input}</p>			
+			<p>Hello: {getter()}</p>			
 		</>
 	)
 }
