@@ -18,7 +18,7 @@ import { useState } from 'react';
 			<Link 
 				href={{
 					pathname: '/page',
-					query: {iV: getter()},
+					query: {input: getter()},
 				}}>
 					<button>ok</button>
 			</Link>

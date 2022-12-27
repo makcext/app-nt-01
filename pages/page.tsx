@@ -2,11 +2,11 @@ import { useRouter } from "next/router"
 
  function Page() {
 	const router = useRouter();
-	const {iV} = router.query;
+	const {input} = router.query;
 
 	return (
 		<>			
-			<p>Hello: {iV}</p>			
+			<p>Hello: {input}</p>			
 		</>
 	)
 }
