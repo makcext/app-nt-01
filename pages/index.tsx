@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import {useState} from 'react';
 
-
- function Home(type: any) {
+function Home() {
 	const [inputValue, setInput] = useState('');
-	const props = inputValue;
+	const props:string = inputValue;
+	let pre:string = 'Hello: ';
 
-	function getter() {
-		return(props);
+	function getter():string {
+		return pre+props	;
 		}
 
 	return (
@@ -23,11 +23,8 @@ import { useState } from 'react';
 					<button>ok</button>
 			</Link>
 			</div>
-			
 		</>
 	)
 }
-
-
 
 export default Home;

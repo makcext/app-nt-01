@@ -5,12 +5,12 @@ import { useRouter } from "next/router"
 	const {input} = router.query;
 
 	function getter() {
-		return(input);
+		return input;
 		}
 
 	return (
 		<>			
-			<p>Hello: {getter()}</p>			
+			<p>{getter()}</p>			
 		</>
 	)
 }
